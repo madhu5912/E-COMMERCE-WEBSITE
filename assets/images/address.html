@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="address.css">
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Address</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="webpage.html"><i class="material-icons">&#xe88a;</i>Home</a>
+            <a href="#"><i class="material-icons">&#xe8b6;</i>Search</a>
+            <a href="contact.html"><i class="material-icons">&#xe0be;</i>Contact</a>
+            <a href="login.html"><i class="material-icons">&#xe7fd;</i>Login</a>
+        </nav>
+    </header>
+    <main>
+        <form action="" method="post">
+            <div class="container">
+                <input type="text" id="name" placeholder="Full Name" required> <br>
+                <input type="text" name="number" placeholder="10-digit Mobile Number" required> <br>
+                <input type="text" name="pincode" placeholder="6-digit PIN code" required> <br>
+                <div class="address">
+                    <input type="text" name="myAddress" placeholder="Enter Your Delivery Address" required>
+                    <input type="text" name="address[]" id="Landmark_0" placeholder="Landmarks" class="form-address">
+                    <input type="button" class="mybox" value="+" onclick="addBox()">
+                </div>
+                <div id="address1">
+
+                </div>
+                <!-- <button type="button" class="cancel">CANCEL ORDER</button> -->
+                <button type="submit" class="place" onclick="redirect()">PLACE ORDER</button>
+            </div>
+        </form>
+    </main>
+    <script src="./script.js"></script>
+</body>
+</html>

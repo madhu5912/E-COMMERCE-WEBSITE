@@ -1,0 +1,90 @@
+nav{
+    overflow: hidden;
+    background-color: black;
+}
+nav a{
+    float: left;
+    font-size: 20px;
+    padding: 14px 16px;
+    transition: 1s ease;
+    text-decoration: none;
+}
+nav a:hover{
+    transition: 1s ease;
+    color: crimson;
+    transform: scale(1.1);
+}
+.material-icons{
+    vertical-align: -6px;
+    color: white;
+    background-color: transparent;
+}
+.container{
+    padding: 60px;
+    margin-top: 5em;
+    margin-left: 500px;
+    font-size: 24px;
+    border: 1px ;
+    width: 300px;
+    
+    border-radius: 10px;
+    transition: 1s;
+}
+.container:hover {
+    transition: 1s;
+    transform:scale(1.1);
+    backdrop-filter: blur(10px);
+    box-shadow: inset 0 0 2000px rgba(255, 255, 255, .5);
+    box-shadow:  0 0 20px rgba(0, 0, 0, 0.5);
+}
+input[type=text]{
+    width: 15em;
+    padding: 12px 20px;
+    margin: 10px;
+    display: inline-block;
+    /* border: 1px solid #ccc; */
+    box-sizing: border-box;
+    background: transparent;
+    border-radius: 5px;
+    /* box-shadow: ; */
+    border: 0px;
+    backdrop-filter: blur(100px);
+    box-shadow:  0 0 2px rgba(0, 0, 0, 0.5);
+    transition: 1s;
+}
+input[type=text]:hover{
+    transform: scale(1.1);
+    transition: 1s;
+}
+.mybox{
+    /* margin-left: 100px; */
+    margin-top: -30px;
+    /* width: 97% !important; */
+}
+button{
+    background-color: transparent;
+    color: black;
+    padding: 14px 20px;
+    width: 12em;
+    /* margin-left: 50px; */
+    float: right;
+    cursor: pointer;
+    margin: 10px;
+    /* display: inline-block; */
+}
+button:hover{
+    opacity: 0.8;
+}
+/* .cancel{
+    float: left;
+}
+.place{
+    float: right;
+} */
+
+body{
+    background-image: url(./a2.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}

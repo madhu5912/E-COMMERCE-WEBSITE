@@ -1,0 +1,272 @@
+{% comment %} <html>
+<body>
+<h2> 
+Name: {{user}} and city :- {{city}} are inserted successfully
+</h2>
+</body>
+</html> {% endcomment %}
+ 
+{% load static %}
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <link rel="stylesheet" href="static\css\style.css">
+     <link rel="stylesheet" href="{% static 'static\css\style.css'%}">
+     <script src="bp.js"></script>
+     <script src="script.js"></script>
+     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>MY WEB PAGE</title>
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+     <style>
+        .main-page {
+          background-image: url(static/images/bg1.jpg);
+        }
+    </style>
+ </head>
+ <body>
+     <header>
+         <nav>
+             <a href="templates\ASSIGNMENT\webpage.html" id="home"><i class="material-icons">&#xe88a;</i>Home</a>
+             <a href="#"><i class="material-icons">&#xe8b6;</i>Search</a>
+             <a href="mailto:madhupurnimag@gmail.com"><i class="material-icons">&#xe0be;</i>Contact</a>
+             <a href="templates\ASSIGNMENT\webpage.html"><i class="material-icons">&#xe7fd;</i>Login</a>
+             <h1>Hi, {{username}}</h1>
+         </nav>
+     </header>
+     <div class="main-page">
+         ____________________ <br> 
+         <br>
+         BON APPETIT <br> 
+         ____________________
+     </div>
+     <div class="row">
+         <h1 style="font-size: 30px;">SNACK</h1> 
+         <div class="card" style="width: 20rem;">
+             <img class="card-img-top" src="static\images\1.jpg" alt="Card image cap">
+             <div class="card-body">
+                 <h5 class="card-title">Burger and French Fries Combo(Veg)</h5>
+                 <p class="card-text">A delicious medium Burger and French Fries combo.</p>
+                 <a href="./login.html" class="btn btn-primary">Order Now</a>
+                 <p id="clicks">0</p>
+                 <button type="button" class="btn btn-primary"  onclick="add()">+</button>
+                 <button type="button" class="btn btn-primary"  onclick="del()">-</button>
+             </div>
+             </div>
+         <div class="card" style="width:20rem;">
+             <img class="card-img-top" src="static\images\2.jpg" alt="Card image cap">
+             <div class="card-body">
+                 <h5 class="card-title">Burger(Non-Veg)</h5>
+                 <p class="card-text">One medium sized Burger</p>
+                 <a href="./login.html" class="btn btn-primary">Order Now</a>
+                 <p id="clicks">0</p>
+                 <button type="button" class="btn btn-primary"  onclick="add1()">+</button>
+                 <button type="button" class="btn btn-primary"  onclick="del1()">-</button>
+             </div>
+             </div>
+             <div class="card" style="width: 20rem;">
+                 <img class="card-img-top" src="static\images\6.jpg" alt="Card image cap">
+                 <div class="card-body">
+                     <h5 class="card-title">Grilled Cheese sandwich(Veg)</h5>
+                     <p class="card-text">A crispy, buttery exterior and gooey cheese sandwich.</p>
+                     <a href="./login.html" class="btn btn-primary">Order Now</a>
+                     <p id="clicks">0</p>
+                 <button type="button" class="btn btn-primary"  onclick="add()">+</button>
+                 <button type="button" class="btn btn-primary"  onclick="del()">-</button>
+             </div>
+             </div>
+         </div>
+         
+     <div class="row">
+         <h2 style="font-size: 30px;">INDIAN CUISINE</h2>
+         <div class="card" style="width: 20rem;">
+             <img class="card-img-top" src="static\images\4.jpg" alt="Card image cap">
+             <div class="card-body">
+                 <h5 class="card-title">Kakori Kebab</h5>
+                 <p class="card-text">The king of all seekh kebabs in India, Kakori kebabs are best paired with naans and lachcha paranthas.</p>
+                 <a href="./login.html" class="btn btn-primary">Order Now</a>
+                 <p id="clicks">0</p>
+                 <button type="button" class="btn btn-primary"  onclick="add()">+</button>
+                 <button type="button" class="btn btn-primary"  onclick="del()">-</button>
+             </div>
+             </div>
+         <div class="card" style="width:20rem;">
+             <img class="card-img-top" src="static\images\5.jpg" alt="Card image cap">
+             <div class="card-body">
+                 <h5 class="card-title">Chicken Chettinad</h5>
+                 <p class="card-text">Chettinad spices can make the world a better place, especially when cooked with chicken.</p>
+                 <a href="./login.html" class="btn btn-primary">Order Now</a>
+                 <p id="clicks">0</p>
+                 <button type="button" class="btn btn-primary"  onclick="add()">+</button>
+                 <button type="button" class="btn btn-primary"  onclick="del()">-</button>
+             </div>
+             </div>
+         <div class="card" style="width: 20rem;">
+             <img class="card-img-top" src="static\images\3.jpg" alt="Card image cap">
+             <div class="card-body">
+                 <h5 class="card-title">Panjiri</h5>
+                 <p class="card-text">Nothing screams nutrition and taste at the same time than this traditional dish from Punjab.</p>
+                 <a href="./login.html" class="btn btn-primary">Order Now</a>
+                 <p id="clicks">0</p>
+                 <button type="button" class="btn btn-primary"  onclick="add()">+</button>
+                 <button type="button" class="btn btn-primary"  onclick="del()">-</button>
+             </div>
+             </div>
+     </div>
+     <div class="row">
+         <h3 style="font-size: 30px;">PIZZA's</h3>
+         <div class="card" style="width: 20rem;">
+             <img class="card-img-top" src="static\images\7.jpg" alt="Card image cap">
+             <div class="card-body">
+                 <h5 class="card-title">Moroccon Spice Pasta Pizza(Veg)</h5>
+                 <p class="card-text">A delicious medium size pasta pizza with extra cheese to spice up your mood.</p>
+                 <a href="./login.html" class="btn btn-primary">Order Now</a>
+                 <p id="clicks">0</p>
+                 <button type="button" class="btn btn-primary"  onclick="add()">+</button>
+                 <button type="button" class="btn btn-primary"  onclick="del()">-</button>
+             </div>
+             </div>
+         <div class="card" style="width:20rem;">
+             <img class="card-img-top" src="static\images\8.jpg" alt="Card image cap">
+             <div class="card-body">
+                 <h5 class="card-title">Chicken Pizza</h5>
+                 <p class="card-text">Have the taste of Chicken Pizza at your home now.</p>
+                 <a href="./login.html" class="btn btn-primary">Order Now</a>
+                 <p id="clicks">0</p>
+                 <button type="button" class="btn btn-primary"  onclick="add()">+</button>
+                 <button type="button" class="btn btn-primary"  onclick="del()">-</button>
+             </div>
+             </div>
+         <div class="card" style="width: 20rem;">
+             <img class="card-img-top" src="static\images\9.jpg" alt="Card image cap">
+             <div class="card-body">
+                 <h5 class="card-title">Margherita(Veg)</h5>
+                 <p class="card-text">Flavorful Margherita Pizza only includes a few simple and tasty ingredients, like perfectly melty mozzarella cheese and fresh basil. </p>
+                 <a href="./login.html" class="btn btn-primary">Order Now</a>
+                 <p id="clicks">0</p>
+                 <button type="button" class="btn btn-primary"  onclick="add()">+</button>
+                 <button type="button" class="btn btn-primary"  onclick="del()">-</button>
+             </div>
+             </div>
+     </div>
+     <div class="row">
+         <h4 style="font-size: 30px;">DESSERTS</h4>
+         <div class="card" style="width: 20rem;">
+             <img class="card-img-top" src="static\images\10.jpg" alt="Card image cap">
+             <div class="card-body">
+                 <h5 class="card-title">Chocolate Truffle Pastry</h5>
+                 <p class="card-text">A recipe for a good chocolate cake is something that can never go to waste. </p>
+                 <a href="./login.html" class="btn btn-primary">Order Now</a>
+                 <p id="clicks">0</p>
+                 <button type="button" class="btn btn-primary"  onclick="add()">+</button>
+                 <button type="button" class="btn btn-primary"  onclick="del()">-</button>
+             </div>
+             </div>
+         <div class="card" style="width:20rem;">
+             <img class="card-img-top" src="static\images\11.jpg" alt="Card image cap">
+             <div class="card-body">
+                 <h5 class="card-title">Khaddu kha Kheer</h5>
+                 <p class="card-text">Khaddu kha Kheer is a traditional sweet dish of Hyderabad which is made using bottle guard.</p>
+                 <a href="./login.html" class="btn btn-primary">Order Now</a>
+                 <p id="clicks">0</p>
+                 <button type="button" class="btn btn-primary"  onclick="add()">+</button>
+                 <button type="button" class="btn btn-primary"  onclick="del()">-</button>
+             </div>
+             </div>
+         <div class="card" style="width: 20rem;">
+             <img class="card-img-top" src="static\images\12.jpg" alt="Card image cap">
+             <div class="card-body">
+                 <h5 class="card-title">Shirley Temple Cupcakes</h5>
+                 <p class="card-text">Shirley Temple cupcakes are perfect celebration cupcakes for kids!</p>
+                 <a href="./login.html" class="btn btn-primary">Order Now</a>
+                 <p id="clicks">0</p>
+                 <button type="button" class="btn btn-primary"  onclick="add()">+</button>
+                 <button type="button" class="btn btn-primary"  onclick="del()">-</button>
+             </div>
+             </div>
+     </div>
+     <div class="row">
+         <h5 style="font-size: 30px;">MOCKTAILS</h5>
+         <div class="card" style="width: 20rem;">
+             <img class="card-img-top" src="static\images\13.jpg" alt="Card image cap">
+             <div class="card-body">
+                 <h5 class="card-title">Blue Curracao Mocktail</h5>
+                 <p class="card-text">A refreshment drink made just with sparkling water, blue curracao syrup and crushed ice.</p>
+                 <a href="./login.html" class="btn btn-primary">Order Now</a>
+                 <p id="clicks">0</p>
+                 <button type="button" class="btn btn-primary"  onclick="add()">+</button>
+                 <button type="button" class="btn btn-primary"  onclick="del()">-</button>
+             </div>
+             </div>
+         <div class="card" style="width:20rem;">
+             <img class="card-img-top" src="static\images\14.jpeg" alt="Card image cap">
+             <div class="card-body">
+                 <h5 class="card-title">Virgin Mocktail</h5>
+                 <p class="card-text">A refreshing mix of lime and mint, this Virgin Mojito Recipe will be your new favorite drink.</p>
+                 <a href="./login.html" class="btn btn-primary">Order Now</a>
+                 <p id="clicks">0</p>
+                 <button type="button" class="btn btn-primary"  onclick="add()">+</button>
+                 <button type="button" class="btn btn-primary"  onclick="del()">-</button>
+             </div>
+             </div>
+         <div class="card" style="width: 20rem;">
+             <img class="card-img-top" src="static\images\15.jpg" alt="Card image cap">
+             <div class="card-body">
+                 <h5 class="card-title">coconut Key Lime Momtini</h5>
+                 <p class="card-text">In the mood for a tropical mocktail? Shake up the coconut key lime momtini. This is ideal for a baby shower and was designed with moms-to-be in mind. It's a fun mix of limeade, coconut milk, and key lime.</p>
+                 <a href="./login.html" class="btn btn-primary">Order Now</a>
+                 <p id="clicks">0</p>
+                 <button type="button" class="btn btn-primary"  onclick="add()">+</button>
+                 <button type="button" class="btn btn-primary"  onclick="del()">-</button>
+             </div>
+             </div>
+     </div>
+     <div class="row">
+         <h6 style="font-size: 30px;">THICK SHAKES</h6>
+         <div class="card" style="width: 20rem;">
+             <img class="card-img-top" src="static\images\16.jpg" alt="Card image cap">
+             <div class="card-body">
+                 <h5 class="card-title">Belgian Chocolate</h5>
+                 <p class="card-text">A blend of Belgian chocolates, chocolate sauce, cold milk and ice.</p>
+                 <a href="./login.html" class="btn btn-primary">Order Now</a>
+                 <p id="clicks">0</p>
+                 <button type="button" class="btn btn-primary"  onclick="add()">+</button>
+                 <button type="button" class="btn btn-primary"  onclick="del()">-</button>
+             </div>
+             </div>
+         <div class="card" style="width:20rem;">
+             <img class="card-img-top" src="static\images\17.jpg" alt="Card image cap">
+             <div class="card-body">
+                 <h5 class="card-title">Fudge Brownie</h5>
+                 <p class="card-text">A blend of brownie, vanilla ice-cream and milk.</p>
+                 <a href="./login.html" class="btn btn-primary">Order Now</a>
+                 <p id="clicks">0</p>
+                 <button type="button" class="btn btn-primary"  onclick="add()">+</button>
+                 <button type="button" class="btn btn-primary"  onclick="del()">-</button>
+             </div>
+             </div>
+         <div class="card" style="width: 20rem;">
+             <img class="card-img-top" src="static\images\18.jpg" alt="Card image cap">
+             <div class="card-body">
+                 <h5 class="card-title">Almonda Mocha</h5>
+                 <p class="card-text">A blend of almonds with Coffee beans.</p>
+                 <a href="./login.html" class="btn btn-primary">Order Now</a>
+                 <p id="clicks">0</p>
+                 <button type="button" class="btn btn-primary"  onclick="add()">+</button>
+                 <button type="button" class="btn btn-primary"  onclick="del()">-</button>
+ 
+             </div>
+             </div>
+     </div>
+     <script src="script.js"></script>
+ </body>
+ <!-- <footer>
+     <div class="form-group shadow-textarea">
+         <label for="exampleFormControlTextarea6">Shadow and placeholder</label>
+         <textarea class="form-control z-depth-1" id="exampleFormControlTextarea6" rows="3" placeholder="Drop Your Review here..."></textarea>
+       </div>
+ </footer> -->
+ </html>

@@ -1,0 +1,48 @@
+<section>
+<p><i class="material-icons">&#xe55f;</i>Hyderabad,Telangana</p>
+</section>
+
+<section>
+<p><i class="material-icons">&#xe551;</i>+91 9640702270</p>
+</section>
+
+<section>
+<p><i class="material-icons">&#xe551;</i>+91 9640702270</p>
+</section>
+
+<form>
+<div class="form">
+<div class="right">
+<div class="contact-form">
+<input type="text" required>
+<span>Full Name</span>
+</div>
+
+<div class="contact-form">
+<input type="E-mail" required>
+<span>E-mail Id</span>
+</div>
+
+<div class="contact-form">
+<textarea name="text"></textarea>
+<span>
+Type your message..
+</span>
+</div>
+
+<div class="contact-form">
+<input type="submit" name="submit">
+</div>
+
+</div>
+</div>
+</form>
+
+<div class="media">
+<li><i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i></li>
+<li><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></li>
+<li><i class="fa fa-whatsapp fa-2x" aria-hidden="true"></i></li>
+<li><i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i></li>
+
+</div>
+

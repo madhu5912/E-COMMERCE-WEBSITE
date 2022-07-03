@@ -1,0 +1,53 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="{% static 'static\css\login.css'%}">
+    <script src="script.js"></script>
+    <script src="bp.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGIN PAGE</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="templates\ASSIGNMENT\webpage.html"><i class="material-icons">&#xe88a;</i>Home</a>
+            <a href="#"><i class="material-icons">&#xe8b6;</i>Search</a>
+            <a href="mailto:madhupurnimag@gmail.com"><i class="material-icons">&#xe0be;</i>Contact</a>
+            <a href="templates\ASSIGNMENT\webpage.html">&#xe7fd;</i>Login</a>
+        </nav>
+    </header>
+    <main>
+        <div id="login-page" class="login">
+            <form method="post">
+                <!-- <div class="close">
+                    <span onclick="document.getElementById('login-page').style.display='none'" class="close" title="close Modal">&times;</span>
+                </div> -->
+                <div class="container">
+                    <input type="text" name="email" id="email" placeholder="Enter Email" required onfocus="myfocus()" onblur="blurFunction()" oninput="onInput()" > <br>
+                    <input type="password" name="pswrd" id="pswrd" placeholder="Enter Password" required onfocus="myFocus()" onblur="onBlurFunction()" oninput="input()" onclick="validate()"> <br>
+                    <button type="submit" id="submit"><a href="./address.html">Submit</a></button>
+                
+                    <br>
+                    <label>
+                        <input type="checkbox" checked="checked" name="remember">Remember Me
+                    </label>
+                    <div class="container-1">
+                        <button type="button" class="cancelbtn" onclick="document.getElementById('login-page').style.display='none'">Cancel</button> <br>
+                        <!-- <span class="pswrd"><a href="#">Forgot Password?</a></span> -->
+                    </div>
+                </div>
+            </form>
+        </div>
+    </main>
+</body>
+<footer>
+    <div class="footer">
+        <h4>&copy;MP25</h4>
+    </div>
+</footer>
+</html>
