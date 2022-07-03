@@ -6,11 +6,13 @@
 1. Make Sure That You Have Installed Django and Python in Your PC.
 
 > Creating a Project using Terminal -->
-  . Django-admin startproject Project_Name
-  . python manage.py startapp App_Name
+
+1. Django-admin startproject Project_Name
+2. python manage.py startapp App_Name
 
 > After Creating The Project -->
-  . Update The Files Like Following
+
+1. Update The Files Like Following
  
 
 Projects / Urls -->
